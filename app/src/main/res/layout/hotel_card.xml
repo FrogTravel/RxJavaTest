@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:id="@+id/card_view"
+          android:padding="@dimen/hotel_card_padding"
+          android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/hotel_photo"
+            android:layout_width="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:text="Hillton beach"
+            android:layout_toRightOf="@id/hotel_photo"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/hotel_rate_button"
+            android:layout_alignBottom="@id/hotel_photo"
+            android:layout_alignLeft="@id/hotel_name"
+            android:layout_marginTop="10dp"
+            android:text="@string/rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
