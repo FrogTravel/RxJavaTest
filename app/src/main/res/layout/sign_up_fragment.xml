@@ -40,18 +40,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Login"
-        android:ems="10"
-        android:id="@+id/editLogin"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/editName"
-        android:layout_alignLeft="@+id/editPassword"
-        android:layout_alignStart="@+id/editPassword" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
         android:id="@+id/editName"
@@ -59,4 +47,16 @@
         android:layout_alignLeft="@+id/editLogin"
         android:layout_alignStart="@+id/editLogin"
         android:layout_marginTop="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:ems="10"
+        android:id="@+id/editLogin"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/editPassword"
+        android:layout_alignStart="@+id/editPassword" />
 </RelativeLayout>

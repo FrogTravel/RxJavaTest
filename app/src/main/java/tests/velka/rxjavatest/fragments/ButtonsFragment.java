@@ -35,6 +35,9 @@ public class ButtonsFragment extends Fragment implements ButtonsView {
         return view;
     }
 
+    /**
+     * TODO write instead of new ButtonsFragment() -> new SingInFragment()
+     */
     @Override
     public void startSignIn() {
         FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
