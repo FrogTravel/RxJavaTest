@@ -5,6 +5,6 @@ package tests.velka.rxjavatest.views;
  */
 
 public interface SignUpView {
-
     void sendInfo();
+    void register();
 }

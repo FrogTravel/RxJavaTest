@@ -1,7 +1,7 @@
 package tests.velka.rxjavatest.model.entity;
 
 /**
- * Created by Forest on 5/10/2017.
+ * Created by ekaterina on 5/10/17
  */
 
 public class User {

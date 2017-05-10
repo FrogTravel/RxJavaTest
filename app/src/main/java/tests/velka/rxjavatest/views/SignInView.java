@@ -5,4 +5,5 @@ package tests.velka.rxjavatest.views;
  */
 
 public interface SignInView {
+    void login();
 }
