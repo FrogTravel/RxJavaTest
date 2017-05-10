@@ -35,9 +35,6 @@ public class ButtonsFragment extends Fragment implements ButtonsView {
         return view;
     }
 
-    /**
-     * TODO write instead of new ButtonsFragment() -> new SingInFragment()
-     */
     @Override
     public void startSignIn() {
         FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
@@ -48,6 +45,9 @@ public class ButtonsFragment extends Fragment implements ButtonsView {
 
     @Override
     public void startSignUp() {
-
+        FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.activity_main_fragment, new SignUpFragment())
+                .commit();
     }
 }

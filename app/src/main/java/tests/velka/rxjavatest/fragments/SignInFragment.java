@@ -36,7 +36,9 @@ public class SignInFragment extends Fragment implements SignInView{
         return view;
     }
 
-
+    /**
+     * TODO show hotel view
+     */
     @Override
     public void login() {
         Toast.makeText(getActivity(), "Login button",
