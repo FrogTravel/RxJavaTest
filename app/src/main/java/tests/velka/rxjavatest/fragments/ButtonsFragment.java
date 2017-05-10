@@ -42,7 +42,7 @@ public class ButtonsFragment extends Fragment implements ButtonsView {
     public void startSignIn() {
         FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .add(R.id.activity_main_fragment, new ButtonsFragment())
+                .replace(R.id.activity_main_fragment, new SignInFragment())
                 .commit();
     }
 

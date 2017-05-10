@@ -9,18 +9,21 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 import tests.velka.rxjavatest.R;
+import tests.velka.rxjavatest.views.SignInView;
 
 /**
  * Created by ekaterina on 4/19/17.
  */
 
-public class SignInPresenter extends Fragment {
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.buttons_fragment, container, false);
-        ButterKnife.bind(this, view);
+public class SignInPresenter {
+    private SignInView signInView;
 
-        return view;
+    public void getLoginListener(View view){
+        signInView.login();
     }
+
+    public void setSignInView(SignInView signInView){
+        this.signInView = signInView;
+    }
+
 }
