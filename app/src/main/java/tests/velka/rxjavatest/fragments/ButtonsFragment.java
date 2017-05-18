@@ -40,11 +40,15 @@ public class ButtonsFragment extends Fragment implements ButtonsView {
         FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction()
                 .add(R.id.activity_main_fragment, new ButtonsFragment())
+                .replace(R.id.activity_main_fragment, new SignInFragment())
                 .commit();
     }
 
     @Override
     public void startSignUp() {
-
+        FragmentManager fragmentManager =  getActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.activity_main_fragment, new SignUpFragment())
+                .commit();
     }
 }
